@@ -54,9 +54,8 @@ sudo apt-get install sbt
 Build and install varilator.
 ```
 sudo apt-get install git make autoconf g++ flex bison
-git clone http://git.veripool.org/git/verilator
+git clone -b stable https://github.com/verilator/verilator.git
 cd verilator
-git checkout -b verilator_3_922 verilator_3_922
 unset VERILATOR_ROOT # For bash, unsetenv for csh
 autoconf # To create ./configure script
 ./configure
